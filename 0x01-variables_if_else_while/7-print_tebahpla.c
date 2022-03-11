@@ -1,19 +1,18 @@
 #include <stdio.h>
-
 /**
- * main - Print reversed alphabet.
+ * main - print if the number is positive, zero, or negative
  *
- * Returns: Always 0 (Success)
+ * Description: using the main function
+ * this program prints "Prints the lowwercase alphabet in reverse
+ * Return: 0
  */
-
 int main(void)
 {
-	int i;
-
-	for (i = 122; i > 96; i--)
-	{
-		putchar(i);
-	}
-	putchar('\n');
-	return (0);
+char c;
+for (c = 'z'; c >= 'a'; c--)
+{
+	putchar(c);
+}
+putchar('\n');
+return (0);
 }
