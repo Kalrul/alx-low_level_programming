@@ -1,20 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints reversed alphabet.
  *
- * Returns: returns 0 when everything works fine
- *
+ * Returns: Always 0 (Success)
  */
 
 int main(void)
 {
 	int n;
 
-	for (n = 122; n >= 97; --n)
+	for (n = 122; n > 97; n--)
 	{
 		putchar(n);
 	}
-	putchar(10);
+	putchar('\n');
 	return (0);
 }
