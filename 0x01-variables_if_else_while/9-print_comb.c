@@ -1,22 +1,22 @@
 #include <stdio.h>
 /**
- * main - printing numbers from 0-9 with commas and space between them
+ * main - prints out all the numbers under 10 with a ,
  * Description: using the main function
  * this program prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
  * Return: 0
  */
 int main(void)
 {
-	int c;
-	for (c = 48; c <= 57; c++)
+	int i;
+	for (i = 48; i < 58; i++)
 	{
-		putchar(c);
-		if (c <= 56)
+		putchar(i);
+		if (i != 57)
 		{
-			putchar(44);
-			putchar(32);
+			putchar(',');
+			putchar(' ');
 		}
 	}
-	putchar(10);
-	return (0)
+	putchar('\n');
+	return (0);
 }
