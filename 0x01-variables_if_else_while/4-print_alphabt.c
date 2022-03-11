@@ -4,6 +4,7 @@
  * main - Entry point
  *
  * Return: returns 0 when everything works fine
+ *
  */
 
 int main(void)
@@ -14,8 +15,8 @@ int main(void)
 	{
 		if (n != 101 && n != 113)
 		{
-		        putchar(n);
-	        }
+			putchar(n);
+		}
 	}
 	putchar(10);
 	return (0);
