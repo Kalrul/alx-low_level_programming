@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
- * * main - Entry point
- * *
- * * Return: returns 0 when everything works fine
- * *
- * */
+ * main - Entry point
+ *
+ * Return: returns 0 when everything works fine
+ */
 
 int main(void)
 {
