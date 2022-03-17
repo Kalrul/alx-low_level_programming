@@ -1,21 +1,18 @@
 #include "main.h"
-
 /**
- * prints_most_numbers - prints most numbers
- * 
- * Description: prints the numbers, from 0 to 9, followed by a new line
- * Return: Always (0)
+ * print_most_numbers - check the code for Holberton School students.
+ * Return: Always 0.
  */
-
 void print_most_numbers(void)
 {
-int num;
+char c = '0';
 
-for (num = 0; num <= 9; num++)
+while (c <= '9')
 {
-if (num !=2 && num != 4)
-_putchar((num % 10) + '0');
+if (c != '2' && c != '4')
+{
+															_putchar(c);
+															c++;
 }
-
 _putchar('\n');
 }
