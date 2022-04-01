@@ -1,1 +1,1 @@
-My nested loop read me file
+Pointers, arrays and strings
