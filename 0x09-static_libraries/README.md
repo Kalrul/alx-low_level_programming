@@ -1,1 +1,1 @@
-Understanding libraries in C language
+Creating and learning about static library
