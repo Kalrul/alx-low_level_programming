@@ -4,28 +4,20 @@
 #include <limits.h>
 
 /**
- * main - check the code
+ * malloc_checked - allocates memory
+ * @b: number of bytes.
  *
- * Return: Always 0.
+ * Return: pointer to the allocated memory.
+ * if malloc fails, status value is equal to 98.
  */
-int main(void)
-{
-	char *c;
-	int *i;
-	float *f;
-	double *d;
 
-	c = malloc_checked(sizeof(char) * 1024);
+void *malloc_checked(unsigned int b)
+{
+	char *p;
+
+	p = malloc(b)
+	b = malloc_checked(sizeof(char) * 98);
 	printf("%p\n", (void *)c);
-	i = malloc_checked(sizeof(int) * 402);
-	printf("%p\n", (void *)i);
-	f = malloc_checked(sizeof(float) * 100000000);
-	printf("%p\n", (void *)f);
-	d = malloc_checked(INT_MAX);
-	printf("%p\n", (void *)d);
-	free(c);
-	free(i);
-	free(f);
-	free(d);
-	return (0);
+	free(p);
+	return (98);
 }
