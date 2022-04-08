@@ -13,11 +13,10 @@
 
 void *malloc_checked(unsigned int b)
 {
-	char *p;
+	void *p;
 
-	p = malloc(b)
-	b = malloc_checked(sizeof(char) * 98);
-	printf("%p\n", (void *)c);
-	free(p);
+	p = malloc(b);
+	if (p == 0)
+	exit(98);
 	return (98);
 }
